@@ -4,17 +4,21 @@
 
 ## Phân tích file
 - Đây là một bài toán RSA và tác giả cho ta biết thêm:
+  
   > $hint1 = p+q$ <br>
   > $hint2 = p.q - (p+q) + 1$
 - Ta thực hiện một số phép biến đổi:
   - Ta có:
+    
     > $hint1 = p+q$ <br>
     > $hint2 = p.q - (p+q) + 1$
   - Đặt $S = p+q$ và $R = p.q$ khi đó:
+    
     > $S = hint1 = p+q$ <br>
     > $R = hint2 + hint1 -1 = p.q$
   - Áp dụng định lý Vi-et ta viết được phương trình: $x^2 - Sx + R = 0$ với $x_1 = p$ và $x_2 = q$.
-    > $\sqrt{\Delta} = \squrt{S^2 - 4R}$ <br>
+    
+    > $\sqrt{\Delta} = \sqrt{S^2 - 4R}$ <br>
     > $p = (S + $\sqrt{\Delta}$\sqrt{\Delta}$)/2$ và $q = (S - $\sqrt{\Delta}$\sqrt{\Delta}$)/2$
 - Sau khi tính được $p$,$q$ ta có thể tính $\phi n = \phi p . \phi q = (p^2 - p)(q^2 -q)$.
 - Từ đây ta có thể dễ dàng tính $d,m$ và suy ra **flag**.
