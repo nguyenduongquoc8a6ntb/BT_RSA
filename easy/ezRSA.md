@@ -16,7 +16,7 @@
     
     > $S = hint1 = p+q$ <br>
     > $R = hint2 + hint1 -1 = p.q$
-  - Áp dụng định lý Vi-et ta viết được phương trình: $x^2 - Sx + R = 0$ với $x_1 = p$ và $x_2 = q$.
+  - Áp dụng định lý Vi-et đảo ta viết được phương trình: $x^2 - Sx + R = 0$ với $x_1 = p$ và $x_2 = q$.
     
     > $\sqrt{\Delta} = \sqrt{S^2 - 4R}$ <br>
     > $p = (S + \sqrt{\Delta})/2$ và $q = (S - \sqrt{\Delta})/2$
