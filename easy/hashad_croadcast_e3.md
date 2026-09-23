@@ -7,7 +7,7 @@
   > $m^e \equiv c_1 \pmod {n_1}$ <br>
   > $m^e \equiv c_2 \pmod {n_2}$ <br>
   > $m^e \equiv c_3 \pmod {n_3}$ <br>
-- Ta dùng CRT để tính ra $C = m^e \bmod N$. Với $N = n_1.n_2.n_3$ thì $m^e < N$, do đó $C = m^e \iff m = \sqrt[e]{C} = \sqrt[3]{C}$.
+- Ta dùng CRT để tính ra $C = m^e \bmod N$. Với $N = n_1.n_2.n_3$ thì $m^e < N$, khi đó $C = m^e \iff m = \sqrt[e]{C} = \sqrt[3]{C}$.
 - Sau khi có m ta dễ dàng tìm lại được **flag**.
 
 # Python code
