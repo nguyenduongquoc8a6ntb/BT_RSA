@@ -18,8 +18,8 @@
     > $R = hint2 + hint1 -1 = p.q$
   - Áp dụng định lý Vi-et đảo ta viết được phương trình: $x^2 - Sx + R = 0$ với $x_1 = p$ và $x_2 = q$.
     
-    > $\sqrt{\Delta} = \sqrt{S^2 - 4R}$ <br>
-    > $p = (S + \sqrt{\Delta})/2$ và $q = (S - \sqrt{\Delta})/2$
+    > - $\sqrt{\Delta} = \sqrt{S^2 - 4R}$ <br>
+    > - $p = (S + \sqrt{\Delta})/2$ và $q = (S - \sqrt{\Delta})/2$
 - Sau khi tính được $p$, $q$ ta có thể tính $\phi n = \phi (p^2) . \phi (q^2) = (p^2 - p)(q^2 -q)$.
 - Từ đây ta có thể dễ dàng tính $d,m$ và suy ra **flag**.
 
