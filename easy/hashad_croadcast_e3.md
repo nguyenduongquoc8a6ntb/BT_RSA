@@ -3,6 +3,7 @@
 - Trong file **gen.py** ta biết $gcd(n_1,n_2,n_3)= 1$ tức là $n_1, n_2, n_3$ là các số nguyên tố cùng nhau đôi một.
 - Trong file **public.txt** ta biết luôn $e=3$ và biết $c_1, c_2, c_3, n_1, n_2, n_3$.
 - Ta có:
+  
   > $m^e \equiv c_1 \pmod n_1$ <br>
   > $m^e \equiv c_2 \pmod n_2$ <br>
   > $m^e \equiv c_3 \pmod n_3$ <br>
