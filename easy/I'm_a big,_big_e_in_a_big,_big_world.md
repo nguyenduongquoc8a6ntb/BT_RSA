@@ -12,7 +12,7 @@ c = 0x731ceb0ac8f10c8ff82450b61b414c4f7265ccf9f73b8e238cc7265f83c635575a9381aa62
 import math
 def wiener_attack(e,N,c):
     # Tính ra k/d của từng tầng
-    def d_generator(e, N):
+    def dk_generator(e, N):
         p1, p2, q1, q2 = 1, 0, 0, 1
         n, d = e, N 
         while d:
@@ -21,7 +21,7 @@ def wiener_attack(e,N,c):
             p1, p2, q1, q2 = a * p1 + p2, p1, a * q1 + q2, q1
             yield [p1, q1]  # [p1] là k (tử số), [q1] là d (mẫu số)
 
-    for k,d in d_generator(e,N):
+    for k,d in dk_generator(e,N):
         if k == 0:
             continue
         else:
