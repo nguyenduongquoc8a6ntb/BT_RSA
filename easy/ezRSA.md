@@ -27,7 +27,7 @@
 - Thay $p.q = hint2 + hint1 - 1$ và $(p-1).(q-1) = p.q - (p+1) + 1 = hint2$ vào phương trình trên ta thu được:
   
   > - $\phi (n) = (hint2 + hint1 - 1).hint2$ <br>
-  > - $N = (p.q)(p.q) = (hint2 + hint1 - 1)^2$
+  > - $n = (p.q)(p.q) = (hint2 + hint1 - 1)^2$
 
 ## Python code
 ### Cách 1:
