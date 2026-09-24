@@ -24,7 +24,7 @@
 - Vì $(3p+3)^2$ rất nhỏ so với $(16p^2 + 17p + 3)^2$ nên $(16p^2 + 17p + 3) \approx \sqrt{4N}$. Khi ta dùng hàm **math.isqrt()** trong python nó sẽ tự động bỏ phần thập phân chừa lại phần nguyên, tức là khi ta nhập $math.isqrt(4N) = (16p^2 + 17p + 3) - 1$
   
   > Ví dụ:
-  > - Cho $16p^2 + 17p + 3 = 100 \iff (16p^2 + 17p + 3)^2 = 10000 giả sử lượng (3p+3)^2 = 9$
+  > - Cho $16p^2 + 17p + 3 = 100 \iff (16p^2 + 17p + 3)^2 = 10000$ giả sử lượng $(3p+3)^2 = 9$
   > - Khi đó $4N = 10000 - 9 = 9991 \iff sqrt{9991} \approx 99.954...$
   > - Hàm $math.sqrt(4N) = 99$
   > - Điều này làm rõ $math.isqrt(4N) = (16p^2 + 17p + 3)^2 + 1$
