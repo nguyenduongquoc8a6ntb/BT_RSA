@@ -14,9 +14,9 @@
   
   > $X = 8p^2 + 7p$ <br>
   > $Y = 8p^2 + 10p + 3$
-  - Tính $X+Y$ và $X-Y$:
+  - Tính $X+Y$ và $Y-X$:
     
-    > $X + Y = 16p^2 + 17p + 3$
+    > $X + Y = 16p^2 + 17p + 3$ <br>
     > $Y - X = 3p + 3$
   - Thay $X+Y$ và $Y-X$ vào *pt1:
     
