@@ -24,7 +24,8 @@
 - Từ đây ta có thể dễ dàng tính $d,m$ và suy ra **flag**.
 ## Một cách giải khác
 - Ta có $\phi (n) = (p^2-p)(q^2-q) = p.q.(p-1).(q-1)$, thay $p.q = hint2 + hint1 - 1$ và $(p-1).(q-1) = p.q - (p+1) + 1 = hint2$ ta thu được:
-  > $\phi (n) = (hint2 + hint1 - 1).hint2$
+  
+  > $\phi (n) = (hint2 + hint1 - 1).hint2$ <br>
   > $N = (p.q)(p.q) = (hint2 + hint1 - 1)^2$
 
 ## Python code
