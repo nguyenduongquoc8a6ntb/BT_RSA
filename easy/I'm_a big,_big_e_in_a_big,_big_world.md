@@ -1,7 +1,7 @@
 # I'm a big, big e in a big, big world (easy)
 ## Phân tích file
-- Tác giả chỉ cho file **bigger.txt** và một gợi ý từ đề là big e.
-- Vì e rất lớn xấp xỉ N dẫn đến việc d được chọn sẽ rất nhỏ. Ta có thể dùng **Wiener's attack** để giải quyết bài này.
+- Tác giả chỉ cho file **bigger.txt** và một gợi ý từ đề là big $e$.
+- Do khoá $d$ được chọn phải rất nhỏ thì mới sinh ra được số $e$ rất lớn sấp xỉ $N$. Ta có thể dùng **Wiener's attack** để giải quyết bài này.
 - Link bài viết **Wiener's attack**:
 ## Python code
 ```python
