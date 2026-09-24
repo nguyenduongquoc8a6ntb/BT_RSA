@@ -5,7 +5,7 @@
 ## Phân tích file
 - Trong file **tung_tung_tung_shahur.py** ta thấy $C = m^e$ và cứ $C < N$ là $C$ sẽ tăng gấp đôi và chương trình sẽ in ra "Tung!". Khi $C > N$ thì $C$ bị trừ đi một lượng $N$ và chương trình sẽ in ra "Sahur!".
 - Điều này có nghĩa là sau cuối chương trình $C$ đã gấp thêm $2^k$ lần với k bằng số lần xuất hiện của "Tung!" và bị trừ đi $N$.
-- Ta đảo ngược quá trình lại sẽ thu được $C_{bđ} = (C + N)/(2^k)$ với $k = 164$.
+- Ta đảo ngược quá trình lại sẽ thu được $C_{bđ} = (C + N)/2^k$ với $k = 164$.
 - Sau khi có $C_{bđ}$ ta dễ dàng tìm ra $m = \sqrt[e]{C_{bđ}}$. Từ đó tìm ra **flag**.
 
 ## Python code
