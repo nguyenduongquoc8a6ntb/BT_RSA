@@ -2,7 +2,7 @@
 ## Phân tích file
 - Tác giả chỉ cho file **bigger.txt** và một gợi ý từ đề là big $e$.
 - Do khoá $d$ được chọn phải rất nhỏ thì mới sinh ra được số $e$ rất lớn sấp xỉ $N$. Ta có thể dùng **Wiener's attack** để giải quyết bài này.
-- Link bài viết **Wiener's attack**:
+- Link bài viết **Wiener's attack**: *Đang cập nhật*
 ## Python code
 ```python
 N = 0xa0d9f425fe1246c25b8c3708b9f6d7747dd5b5e7f79719831c5cbe19fb7bab66ed62719b3fc6090120d2cfe1410583190cd650c32a4151550732b0fc97130e5f02aa26cb829600b6ab452b5b11373ec69d4eaae6c392d92da8bcbea85344af9d4699e36fdca075d33f58049fd0a9f6919f3003512a261a00985dc3d9843a822974df30b81732a91ce706c44bde5ff48491a45a5fa8d5d73bba5022af803ab7bd85250e71fc0254fcf078d21eaa5d38724014a85f679e8a7a1aad6ed22602465f90e6dd8ef95df287628832850af7e3628ad09ff90a6dbdf7a0e6d74f508d2a6235d4eae5a828ac95558bbdf72f39af5641dfe3edb0cdaab362805d926106e2af
