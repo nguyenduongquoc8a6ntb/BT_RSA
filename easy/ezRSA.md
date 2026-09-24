@@ -26,8 +26,8 @@
 - Ta có $\phi (n) = (p^2-p)(q^2-q) = p.q.(p-1).(q-1)$.
 - Thay $p.q = hint2 + hint1 - 1$ và $(p-1).(q-1) = p.q - (p+1) + 1 = hint2$ vào phương trình trên ta thu được:
   
-  > $\phi (n) = (hint2 + hint1 - 1).hint2$ <br>
-  > $N = (p.q)(p.q) = (hint2 + hint1 - 1)^2$
+  > - $\phi (n) = (hint2 + hint1 - 1).hint2$ <br>
+  > - $N = (p.q)(p.q) = (hint2 + hint1 - 1)^2$
 
 ## Python code
 ```python
