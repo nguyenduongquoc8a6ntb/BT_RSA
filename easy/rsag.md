@@ -8,7 +8,7 @@
   > $q = 2p + 1$ <br>
   > $r = 2q + 1 = 2(2p + 1) + 1 = 4p + 3$ <br>
   > $s = 2r + 1 = 2(4p + 3) + 1= 8p + 7$
-- Mà $N = p.q.r.s \iff N = p(2p+1)(4p+3)(8p+7)$. Đến đây bạn có thể khai triển thành phương trình bậc 4 và dùng công cụ để tìm ra p.
+- Mà $N = p.q.r.s \iff N = p(2p+1)(4p+3)(8p+7)$. Đến đây bạn có thể khai triển thành phương trình bậc 4 và dùng công cụ để tìm ra $p$.
 - Tuy nhiên chúng ta biết một tính chất đó là: $(X+Y)^2 - (X-Y)^2 = X^2 + 2XY + Y^2 - X^2 + 2XY -Y^2 = 4XY$ (*pt1)
 - Đặt $X = p(8p+7)$ và $Y = (2p+1)(4p+3)$:
   
@@ -21,6 +21,18 @@
   - Thay $X+Y$ và $Y-X$ vào *pt1:
     
     > $(16p^2 + 17p + 3)^2 - (3p+3)^2 = 4XY = 4N$
+- Vì $(3p+3)^2$ rất nhỏ so với $(16p^2 + 17p + 3)^2$ nên $(16p^2 + 17p + 3) \approx \sqrt{4N}$. Khi ta dùng hàm **math.isqrt()** trong python nó sẽ tự động bỏ phần thập phân chừa lại phần nguyên, tức là khi ta nhập $math.isqrt(4N) = (16p^2 + 17p + 3) - 1$
+  
+  > Ví dụ:
+  > - Cho $16p^2 + 17p + 3 = 100 \iff (16p^2 + 17p + 3)^2 = 10000 giả sử lượng (3p+3)^2 = 9$
+  > - Khi đó $4N = 10000 - 9 = 9991 \iff sqrt{9991} \approx 99.954...$
+  > - Hàm $math.sqrt(4N) = 99$
+  > - Điều này làm rõ $math.isqrt(4N) = (16p^2 + 17p + 3)^2 + 1$
+- Đặt $A = (16p^2 + 17p + 3)^2$ và $B = (3p+3)^2$ ta có:
+  > $A = math.isqrt(4N) + 1$ <br>
+  > $B = math.isqrt(A^2 - 4N)$ <br>
+  > $p = (B/3) - 1$
+- Có $p$ ta tính được $q,r,s$ và dễ dàng tìm lại được **flag**.
   
 ## Python code
 ```python
