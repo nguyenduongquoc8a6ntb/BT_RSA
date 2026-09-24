@@ -2,8 +2,8 @@
 ## Phân tích file
 - Trong bài này tác giả chỉ cho file **is_it_CRT.txt**.
 - Tác giả cố ý cho các giá trị $n_1, n_2, n_3, c_1, c_2, c_3$ để đánh lừa chúng ta dùng CRT.
-- Nhưng trên thực tế các giá trị $n_1, n_2, n_3$ không nguyên tố cùng nhau đôi một, do đó không thể dùng CRT.
-- Ta có thể kết luận $gcd(n_1, n_2) = p$ vì nó không nguyên tố cùng nhau. Lỗi này xảy ra trong quá trình sinh ra $n$ nhưng bị trùng số $p$.
+- Nhưng trên thực tế các giá trị $n_1, n_2, n_3$ không nguyên tố cùng nhau đôi một, do đó không thể dùng **CRT tiêu chuẩn**.
+- Ta có thể kết luận $gcd(n_1, n_2) = p$ vì nó không nguyên tố cùng nhau ($gcd(n_1, n_2) > 1$) và n chỉ do 2 số nguyên tố tạo thành ($n = p.q$). Lỗi này xảy ra trong quá trình sinh ra $n$ nhưng bị trùng số $p$.
 
 ## Python code
 ```python
