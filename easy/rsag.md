@@ -4,18 +4,22 @@
 
 ## Phân tích file
 - Đây là một bài RSA và tác giả cho ta biết thêm mối liên hệ giữa $q,r,s$ với $p$. Cụ thể:
+  
   > $q = 2p + 1$ <br>
   > $r = 2q + 1 = 2(2p + 1) + 1 = 4p + 3$ <br>
   > $s = 2r + 1 = 2(4p + 3) + 1= 8p + 7$
 - Mà $N = p.q.r.s \iff N = p(2p+1)(4p+3)(8p+7)$. Đến đây bạn có thể khai triển thành phương trình bậc 4 và dùng công cụ để tìm ra p.
 - Tuy nhiên chúng ta biết một tính chất đó là: $(X+Y)^2 - (X-Y)^2 = X^2 + 2XY + Y^2 - X^2 + 2XY -Y^2 = 4XY$ (*pt1)
 - Đặt $X = p(8p+7)$ và $Y = (2p+1)(4p+3)$:
+  
   > $X = 8p^2 + 7p$ <br>
   > $Y = 8p^2 + 10p + 3$
   - Tính $X+Y$ và $X-Y$:
+    
     > $X + Y = 16p^2 + 17p + 3$
     > $Y - X = 3p + 3$
   - Thay $X+Y$ và $Y-X$ vào *pt1:
+    
     > $(16p^2 + 17p + 3)^2 - (3p+3)^2 = 4XY = 4N$
   
 ## Python code
