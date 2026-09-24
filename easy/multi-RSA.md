@@ -5,7 +5,7 @@
 ## Phân tích file
 - Ta thấy trong bài này thay vì mã hoá toàn bộ flag thì tác giả lại chọn mã hoá từng chữ cái.
 - Mà ta biết ký tự in ra được nằm trong khoảng từ 32 đến 126. Tức là chỉ có 94 trường hợp!
-- Ta chỉ cần duyệt từng ký tự trong danh sách c và kiểm tra xem ký tự nào mũ e mod n bằng c.
+- Ta chỉ cần duyệt từng ký tự trong danh sách $c$ và kiểm tra xem ký tự nào mũ $e$ mod $n$ bằng $c$.
 
 ## Python code
 ```python
